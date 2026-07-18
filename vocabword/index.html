@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabword - Expand Your Vocabulary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7AB8B8;
+            --primary-dark: #5A9898;
+            --background: #F5F0EB;
+            --text-primary: #2D3436;
+            --text-secondary: #636E72;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .app-badge {
+            display: inline-block;
+        }
+
+        .app-badge img {
+            height: 54px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .links-section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            text-align: center;
+        }
+
+        .links-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+        }
+
+        .legal-links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .legal-links a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 12px 24px;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .legal-links a:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <h1>📚 Vocabword</h1>
+        <p>Expand your vocabulary with beautifully curated words, daily learning, and smart quizzes.</p>
+        <a href="https://apps.apple.com/app/vocabmaster/id0000000000" class="app-badge">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download on the App Store">
+        </a>
+    </header>
+
+    <main class="container">
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>Word of the Day</h3>
+                <p>Learn new words daily with beautiful themed cards</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>Smart Quizzes</h3>
+                <p>Test your knowledge with interactive quizzes</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔊</div>
+                <h3>Pronunciation</h3>
+                <p>Hear words spoken with text-to-speech</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔥</div>
+                <h3>Streak Tracking</h3>
+                <p>Build daily learning habits and track progress</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Home Screen Widget</h3>
+                <p>See the word of the day right on your home screen</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Spaced Repetition</h3>
+                <p>SM-2 algorithm for optimal memorization</p>
+            </div>
+        </section>
+
+        <section class="links-section">
+            <h2>Help & Legal</h2>
+            <div class="legal-links">
+                <a href="support.html">Support</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Vocabword. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="mailto:funfactschannels26@gmail.com">Contact Support</a>
+        </p>
+    </footer>
+</body>
+
+</html>
