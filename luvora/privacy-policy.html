@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Luvora AI — Privacy Policy</title>
+<title>Luvora AI: Privacy Policy</title>
 </head>
 <body style="margin:0; padding:0; background:#F7F4FA; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color:#232130; line-height:1.65;">
 <div style="max-width:720px; margin:0 auto; padding:48px 24px 80px;">
@@ -11,11 +11,11 @@
   <header style="margin-bottom:40px;">
     <div style="font-size:14px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#B01F8C;">Luvora AI</div>
     <h1 style="margin:8px 0 4px; font-size:34px; line-height:1.2;">Privacy Policy</h1>
-    <p style="margin:0; color:#5E5A75;">Effective date: July 17, 2026</p>
+    <p style="margin:0; color:#5E5A75;">Effective date: October 10, 2026</p>
   </header>
 
   <div style="background:#F4DDF0; border-radius:14px; padding:20px 24px; margin-bottom:36px;">
-    <p style="margin:0; font-weight:600; color:#8E1A72;">The short version: your conversations are stored only on your iPhone. Luvora has no accounts, no analytics SDKs, and no ads. Message text is shared with an AI service only when needed to generate a companion's reply — and when on-device AI is used, nothing leaves your phone at all.</p>
+    <p style="margin:0; font-weight:600; color:#8E1A72;">The short version: your conversations are stored only on your iPhone. Luvora has no accounts, no analytics SDKs, and no ads. Message text is shared with an AI service only to generate a companion's reply, and only after you agree in the app. When on-device AI is used, nothing leaves your phone at all.</p>
   </div>
 
   <h2 style="font-size:22px; margin:36px 0 12px;">Who we are</h2>
@@ -29,7 +29,8 @@
   <p style="margin:0 0 16px;">Luvora generates companion replies in one of two ways, depending on your device and configuration:</p>
   <ul style="margin:0 0 16px; padding-left:22px;">
     <li style="margin-bottom:8px;"><strong>On-device AI.</strong> On iPhones that support Apple Intelligence, replies can be generated entirely by Apple's on-device model. In this mode your messages <strong>never leave your phone</strong>. The app's offline demo mode is likewise fully on-device.</li>
-    <li style="margin-bottom:8px;"><strong>Cloud AI.</strong> When cloud AI is used, the text of the current conversation and your profile card are transmitted securely (over HTTPS) to our AI provider, Anthropic, solely to generate the companion's reply. This data is processed under <a href="https://www.anthropic.com/legal/privacy" style="color:#B01F8C;">Anthropic's privacy policy</a>; it is not used for advertising, and API conversations are not used to train Anthropic's models by default. We do not send your Apple Account, purchase, or device-identifier information with these requests.</li>
+    <li style="margin-bottom:8px;"><strong>Cloud AI.</strong> Premium replies, and the first 15 replies for new users, come from a cloud AI model. Luvora asks for your permission before the first cloud reply. When cloud AI is used, the recent messages in that chat, your companion's personality, the name, pronouns, interests, and goal in your profile, and the short memory note for that conversation are sent securely (over HTTPS) through our server to our AI provider, Anthropic, solely to generate the reply. Anthropic processes this data under its <a href="https://www.anthropic.com/legal/commercial-terms" style="color:#B01F8C;">commercial terms</a>, may not use it to train its models, and does not keep it longer than its <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data" style="color:#B01F8C;">data retention policy</a> allows. It is never used for advertising.</li>
+    <li style="margin-bottom:8px;"><strong>Our server.</strong> Our server passes each request to Anthropic and the reply back to you. It never stores your messages or replies. To keep usage fair it checks your Premium subscription using the signed receipt Apple provides, and for the free replies it uses a random install ID created by the app together with Apple's DeviceCheck service, which tells us whether an iPhone has already used its free replies without identifying you. The server keeps only message counts tied to those IDs, and never sends them to Anthropic.</li>
   </ul>
   <p style="margin:0 0 16px;">Conversations are never used for advertising, sold, or shared with anyone else.</p>
 
@@ -42,7 +43,7 @@
   </ul>
 
   <h2 style="font-size:22px; margin:36px 0 12px;">Purchases and subscriptions</h2>
-  <p style="margin:0 0 16px;">Luvora Premium subscriptions are processed entirely by Apple through the App Store. We never see your name, payment details, or Apple Account information. The app checks your subscription status on-device using Apple's StoreKit framework. Purchases are subject to <a href="https://www.apple.com/legal/privacy/" style="color:#B01F8C;">Apple's privacy policy</a>.</p>
+  <p style="margin:0 0 16px;">Luvora Premium subscriptions are processed entirely by Apple through the App Store. We never see your name, payment details, or Apple Account information. The app checks your subscription status using Apple's StoreKit framework, and our server verifies Apple's signed receipt before sending a Premium reply to the cloud AI. Purchases are subject to <a href="https://www.apple.com/legal/privacy/" style="color:#B01F8C;">Apple's privacy policy</a>.</p>
 
   <h2 style="font-size:22px; margin:36px 0 12px;">Notifications</h2>
   <p style="margin:0 0 16px;">If you enable notifications, Luvora schedules local reminders on your device. These are generated on your iPhone; no notification data leaves your device.</p>
@@ -51,7 +52,7 @@
   <p style="margin:0 0 16px;">You can clear any conversation from its chat menu, delete saved Memories and custom characters in the app, and permanently remove all locally stored data by deleting the app from your device (subject to any device backups you keep).</p>
 
   <h2 style="font-size:22px; margin:36px 0 12px;">Adults only; wellbeing</h2>
-  <p style="margin:0 0 16px;">Luvora is for users aged 18 and over and is not directed at children; we collect no data from children. Companions are fictional AI characters — they are not real people and are not a substitute for professional advice, therapy, or crisis support. If you are struggling, please contact local emergency services or a crisis line such as 988 (US Suicide &amp; Crisis Lifeline).</p>
+  <p style="margin:0 0 16px;">Luvora is for users aged 18 and over and is not directed at children; we collect no data from children. Companions are fictional AI characters. They are not real people and are not a substitute for professional advice, therapy, or crisis support. If you are struggling, please contact local emergency services or a crisis line such as 988 (US Suicide &amp; Crisis Lifeline).</p>
 
   <h2 style="font-size:22px; margin:36px 0 12px;">Changes to this policy</h2>
   <p style="margin:0 0 16px;">If we change this policy, we will update this page and the effective date above. Material changes will be noted in the app's release notes.</p>
